@@ -8,6 +8,13 @@
 <body>
     <h1>{{name}}</h1>
     <h1>{{pc}}</h1>
+    <h1>{{info.age}}</h1>
     <h1>{{info}}</h1>
+    <h1>forループを試す</h1>
+    {%for parts in pc%}
+    <h2>{{parts}}</h2>
+    {%endfor%}
+    <h1>ループ終了</h1>
+
 </body>
 </html>
