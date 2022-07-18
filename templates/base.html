@@ -15,6 +15,11 @@
     <h2>{{parts}}</h2>
     {%endfor%}
     <h1>ループ終了</h1>
-
+    <h1>ifを試す</h1>
+    {%if 'ryzen7' in pc%}
+    <h3>ryzen9があります</h3>
+    {%else%}
+    <h3>Not Found</h3>
+    {%endif%}
 </body>
 </html>
