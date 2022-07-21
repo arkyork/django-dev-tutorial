@@ -23,3 +23,6 @@ def hero(request):
     }
     return render(request,'base.html',context={'name':name,
     'pc':pc,'info':info})
+
+def sample(request):
+    return render(request,'sample.html')
