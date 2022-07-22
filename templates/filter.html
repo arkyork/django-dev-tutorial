@@ -1,0 +1,7 @@
+{% load events_tags %}
+<h1>{{name|upper}}</h1>
+<h1>{{page_url|urlize}}</h1>
+<h3>{{bmi|floatformat:5}}</h3>
+<h3>{{parts|random}}</h3>
+<p>{{parts|join:' '}}</p>
+<p>{{st|status_to_string:'kojirou'}}</p>

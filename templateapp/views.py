@@ -26,3 +26,27 @@ def hero(request):
 
 def sample(request):
     return render(request,'sample.html')
+
+def fil(request):
+    name='yamada'
+    height=18555
+    weight=1500
+    bmi=weight/(height/100)**2
+    page_url='ホームページ: https://docs.djangoproject.com/ja/4.0/'
+    parts=['ryzen3','gtx1660super','memory:64GB']
+    msg='hello world'
+    num=10
+    return render(
+        request,
+        'filter.html',
+        context={
+            'name':name,
+            'height':height,
+            'weight':weight,
+            'bmi':bmi,
+            'page_url':page_url,
+            'parts':parts,
+            'msg':msg,
+            'st':num
+        }
+    )
