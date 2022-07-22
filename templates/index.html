@@ -1,5 +1,8 @@
+{% load static %}
 <html lang="jp">
+
 <head>
+    <link rel="stylesheet" href="{%static 'in.css'%}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +19,7 @@
         #ytgsyjhs
     </p>
     <a href="{%url 'templateapp:filter'%}">フィルターサイトです</a>
+    <img src="{%static 'sample.jpg'%}" alt="">
     <script>
         let y='rgso'
         for(let x=0;x<25;x++){
